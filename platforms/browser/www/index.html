@@ -42,6 +42,8 @@
     <link rel="stylesheet" type="text/css" href="css/core-min.css" />
     <link rel="stylesheet" type="text/css" href="css/core.css" />
     <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" href="onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="onsenui/css/onsen-css-components.min.css">
     <title>MotorcycleRepair</title>
 
 
@@ -53,32 +55,34 @@
     </div>
 
 
-       <a class="raised-button bg-green fg-white" href="quickfix.html" style=" text-align: center; font-size: 20pt; margin-top: 100px; width:100%; height:30%; background-color: red;">QUICKFIX<img class="iconcenter" src="img/settings.png" ></a>
+       <a onclick="ons.notification.alert('Good Day!', 2000)" class="raised-button bg-green fg-white" href="quickfix.html" style=" text-align: center; font-size: 20pt; margin-top: 100px; width:100%; height:30%; background-color: red;">QUICKFIX<img class="iconcenter" src="img/settings.png" ></a>
        
        <a class="raised-button bg-green fg-white" href="quickfix.html" style=" text-align: center; font-size: 20pt; margin-top: 10px; width:100%; height:30%; background-color: red;">MAINTENANCE<img class="iconcenter" src="img/tools.png" ></a>
       
 
      
+   <body onload="onLoad();">
+       <button name="buttonClick" onclick="exitFromApp()">Click Me!</button>
+    </body>
 
-<div class="bottom-nav">
-    <button class="button">
-        <span class="icon i-add"></span>
-        <span class="label">Add</span>
-    </button>
-    <button class="button">
-        <span class="icon i-favorite"></span>
-        <span class="label">Favorites</span>
-    </button>
-    <button class="button">
-        <span class="icon i-search"></span>
-        <span class="label">Search</span>
-    </button>
-</div>
+    <button onclick="ons.notification.alert('Hello Good Day!')">click me</button>
 
 
 </body>
-<!--     <script type="text/javascript" src="cordova.js"></script> -->
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+      function exitFromApp()
+             {
+                navigator.app.exitApp();
+             }
+
+      function onLoad()
+            {
+                  document.addEventListener("deviceready", onDeviceReady, true);
+            }        
+    </script>
+    <script src="onsenui/js/onsenui.min.js"></script>
+    <!-- <script type="text/javascript" src="cordova.js"></script>
+ -->    <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/core.js"></script>
         <script type="text/javascript" src="js/core.min.js"></script>
 </html>
