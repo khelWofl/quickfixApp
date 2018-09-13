@@ -9,7 +9,7 @@
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
 
-<!--     <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/core-min.css" />
     <link rel="stylesheet" type="text/css" href="css/core-colors.css">
     <link rel="stylesheet" type="text/css" href="css/core-colors.min.css">
@@ -30,9 +30,9 @@
          <span class="app-title">M<img src="img/motor.png" height="30" width="30">TORCYCLE REPAIR</span>
     </div>
 
-
        <a onclick="showToast()" class="button button--light" href="quickfix.html" style=" text-align: center; font-size: 20pt; margin-top: 100px; width:100%; height:30%;">QUICKFIX<img class="iconcenter" src="img/settings.png" height="100" width="100"></a>
 
+                <input type="submit" onclick="exit()">
        
        <a class="button button--light" href="maintenance.html" style=" text-align: center; font-size: 20pt; margin-top: 10px; width:100%; height:30%;">MAINTENANCE<img class="iconcenter" src="img/tools.png" height="100" width="100" ></a>
 
@@ -58,16 +58,23 @@
         <script type="text/javascript">
         var showToast = function() {
           ons.notification.toast('Do It Your Self!!', {
-            timeout: 1000
+            timeout: 900
           });
         };
+
+            function exit()
+        {
+            navigator.app.exitApp();
+            console.log('test');
+        }
+
 
         </script>
 
         <script src="onsenui/js/angular.js"></script>
         <script src="onsenui/js/angular-onsenui.js"></script>
          <script src="onsenui/js/onsenui.min.js"></script>
-<!--     <script type="text/javascript" src="cordova.js"></script> -->
+<!--         <script type="text/javascript" src="cordova.js"></script> -->
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/core.js"></script>
         <script type="text/javascript" src="js/core.min.js"></script>
