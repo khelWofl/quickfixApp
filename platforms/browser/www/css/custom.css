@@ -29,3 +29,7 @@
 
     font-family: "roboto";
 }
+
+ons-button[modifier="material"] {
+  margin: 4px 0px;
+}
