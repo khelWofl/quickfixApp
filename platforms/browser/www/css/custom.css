@@ -33,3 +33,7 @@
 ons-button[modifier="material"] {
   margin: 4px 0px;
 }
+
+.headcolor {
+    color: white;
+}
