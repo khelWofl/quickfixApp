@@ -61,70 +61,50 @@
 	        <a href="quickfix.html"><img src="img/back.png"></a>
 	      </div>
 	      <div class="center">
-	       <span class="fg-white">SCOOTER  <img src="img/scooter.png" height="30" width="30"></span>
+	       <span class="fg-white">TIRES  <img src="img/tire.png" height="30" width="30"></span>
 	      </div>
+        <div class="right">
+          <button onclick="coreToasts()" class="submit">tools</button>
+        </div>
 	    </ons-list-item>         
    	</div>
 
-    	<br><br><br>
+    	<br><br><br><br><br>
+<!-- <ons-page style="margin-top: 100px;"> -->
+ 
 
-<ons-list-header>SCOOTER</ons-list-header>
-    <ons-list-item>
-      <div class="left">
-        <a class="button button--light" href="tires.html">
-        <img class="list-item__thumbnail" src="img/tire.png">
-        </a>
+  <ons-carousel  swipeable auto-scroll overscrollable id="carousel">
+    <ons-carousel-item style="background-color: #085078;">
+      <div style="height: 100px; text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+        BLUE
       </div>
-      <div class="center">
-        <span class="list-item__title">Tires</span>
+    </ons-carousel-item>
+    <ons-carousel-item style="background-color: #373B44;">
+      <div style="height: 100px; text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+        DARK
       </div>
-    </ons-list-item>
+    </ons-carousel-item>
+    <ons-carousel-item style="background-color: #D38312;">
+      <div style="height: 100px; text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+        ORANGE
+      </div>
+    </ons-carousel-item>
+  </ons-carousel>
+</ons-page>
 
-    <ons-list-item>
-      <div class="left">
-      	<a class="button button--light" href="">
-        <img class="list-item__thumbnail" src="img/plug.png">
-        </a>
-      </div>
-      <div class="center">
-        <span class="list-item__title">Wiring / Electrical</span>
-      </div>
-    </ons-list-item>
-
-    <ons-list-item>
-      <div class="left">
-      	<a class="button button--light" href="">
-        <img class="list-item__thumbnail" src="img/brake.png">
-        </a>
-      </div>
-      <div class="center">
-        <span class="list-item__title">Brakes</span>
-      </div>
-    </ons-list-item>
-
-    <ons-list-item>
-        <div class="left">
-       	<a class="button button--light" href="">
-        <img class="list-item__thumbnail" src="img/suspension.png">
-        </a>
-      </div>
-      <div class="center">    
-        <span class="list-item__title">Suspension</span>
-      </div>
-    </ons-list-item>
-
-      <ons-list-item>
-        <div class="left">
-        <a class="button button--light" href="">
-        <img class="list-item__thumbnail" src="img/fanbelt.png">
-        </a>
-      </div>
-      <div class="center">    
-        <span class="list-item__title">Fan Belt & Fly Ball</span>
-      </div>
-    </ons-list-item>
-
+<ons-page style="margin-top: 200px;">
+  <STRONG>Some content here</STRONG>
   
+  <div><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p></div>
+</ons-page>
+
+      
 
      <div class="bottom-nav">
         <button modifier="material" class="button panelcolor">
@@ -145,10 +125,8 @@
       
     </div>
 </body>
-	<script type="text/javascript">
-	
-	</script>
-    <script src="onsenui/js/onsenui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3"></script>
+        <script src="onsenui/js/onsenui.min.js"></script>
     <!-- <script type="text/javascript" src="cordova.js"></script>
  -->    <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/core.js"></script>
