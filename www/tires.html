@@ -1,24 +1,5 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
 
 <head>
@@ -58,7 +39,7 @@
     <div class="header center"> 
 	    <ons-list-item>
 	      <div class="left">
-	        <a href="quickfix.html"><img src="img/back.png"></a>
+	        <a onclick="showModal()" href="quickfix.html"><img src="img/back.png"></a>
 	      </div>
 	      <div class="center">
 	       <span class="fg-white">TIRES  <img src="img/tire.png" height="30" width="30"></span>
@@ -106,24 +87,25 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 
       
 
-     <div class="bottom-nav">
+      <div class="bottom-nav">
         <button modifier="material" class="button panelcolor">
-            <a href="index.html">
+            <a onclick="showModal()" href="index.html">
                 <img src="img/hometrans.png">
             </a>
         </button>
           <button modifier="material" class="button panelcolor">
-             <a href="quickfix.html">
-                <img src="img/button-settingstrans.png">
+             <a onclick="showModal()" href="quickfix.html">
+                <img src="img/button-settings.png">
             </a>
         </button>
         <button modifier="material" class="button panelcolor">
-            <a href="maintenance.html">
+            <a  onclick="showModal()" href="maintenance.html">
                 <img src="img/button-toolstrans.png">
             </a>
         </button>
       
     </div>
+</body>
 </body>
         <script type="text/javascript" src="js/jquery.easing.1.3"></script>
         <script src="onsenui/js/onsenui.min.js"></script>

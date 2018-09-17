@@ -58,7 +58,7 @@
     <div class="header center"> 
         <ons-list-item>
       <div class="left">
-        <a href="index.html"><img src="img/back.png"></a>
+        <a onclick="showModal()" href="index.html"><img src="img/back.png"></a>
       </div>
       <div class="center">
        <span class="app-title fg-white">QUICKFIX  <img src="img/settings.png" height="20" width="20"></span>
@@ -94,7 +94,7 @@
     <ons-list-header>SCOOTER</ons-list-header>
     <ons-list-item>
       <div class="left">
-        <a class="button button--light" href="scooter.html">
+        <a onclick="showModal()" class="button button--light" href="scooter.html">
         <img class="list-item__thumbnail" src="img/scooter.png">
         </a>
       </div>
@@ -106,7 +106,7 @@
     <ons-list-header>UNDERBONES</ons-list-header>
     <ons-list-item>
       <div class="left">
-        <a class="button button--light" href="">
+        <a onclick="showModal()" class="button button--light" href="underbones.html">
         <img class="list-item__thumbnail" src="img/underbone.png">
         </a>
       </div>
@@ -118,7 +118,7 @@
     <ons-list-header>MOPED</ons-list-header>
     <ons-list-item>
       <div class="left">
-        <a class="button button--light" href="">
+        <a onclick="showModal()" class="button button--light" href="moped.html">
         <img class="list-item__thumbnail" src="img/moped.png">
         </a>
       </div>
@@ -130,7 +130,7 @@
     <ons-list-header>STREET</ons-list-header>
     <ons-list-item>
         <div class="left">
-        <a class="button button--light" href="">
+        <a onclick="showModal()" class="button button--light" href="street.html">
         <img class="list-item__thumbnail" src="img/street.png">
         </a>
       </div>
@@ -141,23 +141,41 @@
 
  <div class="bottom-nav">
         <button modifier="material" class="button panelcolor">
-            <a href="index.html">
+            <a onclick="showModal()" href="index.html">
                 <img src="img/hometrans.png">
             </a>
         </button>
           <button modifier="material" class="button panelcolor">
-             <a href="quickfix.html">
+             <a onclick="showModal()" href="quickfix.html">
                 <img src="img/button-settings.png">
             </a>
         </button>
         <button modifier="material" class="button panelcolor">
-            <a href="maintenance.html">
+            <a  onclick="showModal()" href="maintenance.html">
                 <img src="img/button-toolstrans.png">
             </a>
         </button>
       
     </div>
+     <ons-modal direction="up">
+      <div style="text-align: center">
+        <p>
+          <ons-icon icon="md-spinner" size="28px" spin></ons-icon> Loading...
+        </p>
+      </div>
+    </ons-modal>
 </body>
+     <script type="text/javascript">
+
+        function showModal() {
+          var modal = document.querySelector('ons-modal');
+          modal.show();
+          setTimeout(function() {
+            modal.hide();
+          }, 2000);
+        }    
+
+        </script>
     
     <script src="onsenui/js/onsenui.min.js"></script>
     <!-- <script type="text/javascript" src="cordova.js"></script>

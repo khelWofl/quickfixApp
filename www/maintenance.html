@@ -58,7 +58,7 @@
     <div class="header center"> 
         <ons-list-item>
           <div class="left">
-            <a href="quickfix.html"><img src="img/back.png"></a>
+            <a onclick="showModal()" href="quickfix.html"><img src="img/back.png"></a>
           </div>
           <div class="center">
            <span class="app-title fg-white">MAINTENANCE  <img src="img/tools.png" height="20" width="20"></span>
@@ -88,6 +88,17 @@
       </div>
       <div class="center">
         <span class="list-item__title">Proper Cleaning</span>
+      </div>
+    </ons-list-item>
+
+        <ons-list-item>
+      <div class="left">
+        <a class="button button--light" href="scooter.html">
+        <img class="list-item__thumbnail" src="img/tire.png">
+        </a>
+      </div>
+      <div class="center">
+        <span class="list-item__title">Tire Pressure</span>
       </div>
     </ons-list-item>
 
@@ -124,26 +135,45 @@
       </div>
     </ons-list-item>
 
- <div class="bottom-nav">
+  <div class="bottom-nav">
         <button modifier="material" class="button panelcolor">
-            <a href="index.html">
+            <a onclick="showModal()" href="index.html">
                 <img src="img/hometrans.png">
             </a>
         </button>
           <button modifier="material" class="button panelcolor">
-             <a href="quickfix.html">
+             <a onclick="showModal()" href="quickfix.html">
                 <img src="img/button-settingstrans.png">
             </a>
         </button>
         <button modifier="material" class="button panelcolor">
-            <a href="maintenance.html">
+            <a  onclick="showModal()" href="maintenance.html">
                 <img src="img/button-tools.png">
             </a>
         </button>
       
     </div>
+
+     <ons-modal direction="up">
+      <div style="text-align: center">
+        <p>
+          <ons-icon icon="md-spinner" size="28px" spin></ons-icon> Loading...
+        </p>
+      </div>
+    </ons-modal>
 </body>
-    
+
+     <script type="text/javascript">
+
+        function showModal() {
+          var modal = document.querySelector('ons-modal');
+          modal.show();
+          setTimeout(function() {
+            modal.hide();
+          }, 2000);
+        }    
+
+        </script>
     <script src="onsenui/js/onsenui.min.js"></script>
     <!-- <script type="text/javascript" src="cordova.js"></script>
  -->    <script type="text/javascript" src="js/index.js"></script>
