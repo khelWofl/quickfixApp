@@ -63,6 +63,9 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.demo.MR"
+        },
+        "cordova.custom.plugins.exitapp": {
+            "PACKAGE_NAME": "com.demo.MR"
         }
     },
     "dependent_plugins": {

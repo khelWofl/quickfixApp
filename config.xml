@@ -30,6 +30,7 @@
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+     <plugin name="cordova-plugin-exitapp" source="npm" spec="~1.0.0" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/motor.png" />
         <icon density="mdpi" src="www/res/icon/android/motor.png" />
@@ -47,7 +48,7 @@
         <splash density="port-mdpi" src="www/res/screen/android/motor.png" />
         <splash density="port-hdpi" src="www/res/screen/android/motor.png" />
         <splash density="port-xhdpi" src="www/res/screen/android/motor.png" />
-        <splash density="port-xxhdpi" src="www/res/screen/motor.png" />
+        <splash density="port-xxhdpi" src="www/res/screen/android/motor.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/motor.png" />
     </platform>
     <platform name="ios">
@@ -107,6 +108,9 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <access origin="*" /> <!-- Required for iOS9 -->
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>

@@ -106,7 +106,25 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
       
     </div>
 </body>
-</body>
+        <script type="text/javascript">
+            $(".e-list").slideUp(function() {
+            $(".e-button").removeClass("open");
+        });
+
+        $(".e-button").on("click", function() {
+            if ($(this).hasClass("open")) {
+                $(".e-list").slideUp(function() {
+                    $(".e-button").removeClass("open");
+                });
+            } else {
+                $(this).addClass("open");
+                setTimeout(function() {
+                    $(".e-list").stop().slideDown();
+                }, 200);
+            }
+        });
+        </script>
+
         <script type="text/javascript" src="js/jquery.easing.1.3"></script>
         <script src="onsenui/js/onsenui.min.js"></script>
     <!-- <script type="text/javascript" src="cordova.js"></script>
