@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="onsenui/css/onsenui.css">
     <link rel="stylesheet" type="text/css" href="onsenui/css/onsen-css-components.css">
     <link rel="stylesheet" href="onsenui/css/onsen-css-components.min.css">
-    <title>MotorcycleRepair</title>
+    <title>Motorcycle Maintenance App</title>
 
 
 </head>
@@ -39,26 +39,26 @@
     <div class="header center"> 
 	    <ons-list-item>
 	      <div class="left">
-	        <a onclick="showModal()" href="quickfix.html"><img src="img/back.png"></a>
+	        <a onclick="showModal()" href="street.html"><img src="img/back.png"></a>
 	      </div>
 	      <div class="center">
-	       <span class="fg-white">TIRES  <img src="img/tire.png" height="30" width="30"></span>
+	       <span class="fg-white">CARBURETOR  <img src="img/tuneup.png" height="30" width="30"></span>
 	      </div>
-        <div class="right">
-          <button onclick="coreToasts()" class="submit">tools</button>
+         <div class="right">
+          <ons-button onclick="ons.notification.alert('<h3>Tools</h3>  Carburetor Diagnostic and Tuning Tools ')">Tools</ons-button>
         </div>
 	    </ons-list-item>         
    	</div>
 
-    	<br><br><br><br><br>
+
+
+    	<br><br><br>
 <!-- <ons-page style="margin-top: 100px;"> -->
  
 
-  <ons-carousel  swipeable auto-scroll overscrollable id="carousel">
-    <ons-carousel-item style="background-color: #085078;">
-      <div style="height: 100px; text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
-        BLUE
-      </div>
+<!--   <ons-carousel swipeable auto-scroll overscrollable id="carousel" height="100">
+    <ons-carousel-item style="background-color: #085078;" >
+      <img src="img/tire1.jpg" class="center" style="object-fit: stretch;">
     </ons-carousel-item>
     <ons-carousel-item style="background-color: #373B44;">
       <div style="height: 100px; text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
@@ -71,23 +71,37 @@
       </div>
     </ons-carousel-item>
   </ons-carousel>
+</ons-page> -->
+<ons-page>
+      <div>
+        <br><br>  
+          <img class="center" src="img/carburetor.jpg" style="object-fit: cover; height: 70%; width: 100%;">
+        <b>Checking the carburetor</b>
+        <b>Check:</b> 
+        <p>• Carburetor body</p>
+        <p>• Float Chamber </p>
+        <p>Cracks / Damage – Replace </p>
+                                                                          
+          Ex. Gasket damage , Needle Valve damage, Piston Valve, Damage / Scratches / Wear / Replace <br>
+      <br><b>Check:</b>             
+      <p>• Fuel passages</p>                         
+      <p>• Obstruction – Clean</p> 
+      <b>Check:</b> 
+      <p>• Float Chamber body</p>
+      <p>• Dirt – Clean</p> 
+      <b>Check:</b>
+      <p>• Main Jet</p> 
+      <p>• Needle jet  holder</p>
+      <p>• Main nozzle</p>
+      <p>• Bends damage / wear / Replace</p>
+      <p>• Obstruction Clean</p>
+      <p>• Blow out the jet with compressed air pilot jet</p>
+
+              <br><br><br>   
+      </div>
 </ons-page>
-
-<ons-page style="margin-top: 200px;">
-  <STRONG>Some content here</STRONG>
-  
-  <div><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p></div>
-</ons-page>
-
-      
-
-      <div class="bottom-nav">
+         
+    <div class="bottom-nav">
         <button modifier="material" class="button panelcolor">
             <a onclick="showModal()" href="index.html">
                 <img src="img/hometrans.png">
@@ -95,7 +109,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
         </button>
           <button modifier="material" class="button panelcolor">
              <a onclick="showModal()" href="quickfix.html">
-                <img src="img/button-settings.png">
+                <img src="img/button-settingstrans.png">
             </a>
         </button>
         <button modifier="material" class="button panelcolor">
@@ -103,28 +117,13 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 <img src="img/button-toolstrans.png">
             </a>
         </button>
-      
     </div>
+    
 </body>
         <script type="text/javascript">
-            $(".e-list").slideUp(function() {
-            $(".e-button").removeClass("open");
-        });
-
-        $(".e-button").on("click", function() {
-            if ($(this).hasClass("open")) {
-                $(".e-list").slideUp(function() {
-                    $(".e-button").removeClass("open");
-                });
-            } else {
-                $(this).addClass("open");
-                setTimeout(function() {
-                    $(".e-list").stop().slideDown();
-                }, 200);
-            }
-        });
+           
         </script>
-
+        <script type="text/javascript" src="onsenui/js/onsenui.js"  ></script>
         <script type="text/javascript" src="js/jquery.easing.1.3"></script>
         <script src="onsenui/js/onsenui.min.js"></script>
     <!-- <script type="text/javascript" src="cordova.js"></script>
