@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+   <!--  <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+      <link rel="stylesheet" type="text/css" href="css/core-min.css" />
+    <link rel="stylesheet" type="text/css" href="css/core-colors.css">
+    <link rel="stylesheet" type="text/css" href="css/core-colors.min.css">
+    <link rel="stylesheet" type="text/css" href="css/core.css" />
+    <link rel="stylesheet" type="text/css"  href="css/core-icons.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/core-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" href="onsenui/css/onsenui.css">
+    <link rel="stylesheet" type="text/css" href="onsenui/css/onsen-css-components.css">
+    <link rel="stylesheet" href="onsenui/css/onsen-css-components.min.css">
+    <title>Motorcycle Maintenance App</title>
+
+
+</head>
+
+<body>
+    <div class="header center"> 
+	    <ons-list-item>
+	      <div class="left">
+	        <a onclick="showModal()" href="street.html"><img src="img/back.png"></a>
+	      </div>
+	      <div class="center">
+	       <span class="fg-white">Clutch  <img src="img/clutch.png" height="30" width="30"></span>
+	      </div>
+         <div class="right">
+          <ons-button onclick="ons.notification.alert('<h3>Tools</h3> Tusk Adjustable Clutch Holding Tool ')">Tools</ons-button>
+        </div>
+	    </ons-list-item>         
+   	</div>
+
+
+
+    	<br><br><br>
+
+<ons-page>
+      <div>
+        <br><br> <br>
+        <img class="center" src="img/clutch.jpg" style="object-fit: cover; height: 70%; width: 100%;">
+        <b>How to Adjust a Motorcycle Clutch</b>
+        <p>The clutch is the part of an engine that controls the power transition. A common, uncomplicated type of clutch is a clutch that works with either the drive shaft or the line shaft. A motorcycle clutch typically uses what is known as a wet clutch system. In such a system, plain steel and friction plates work in tandem to control the crank shaft. Needless to say, a properly operating clutch is an essential component of any automobile, be it a car, truck, sport utility vehicle, or motorcycle.</p>
+
+        <p>If your motorcycle clutch is not working right, at best your ride isn’t as easy as you’d like, and at worst you could be in serious danger when you ride. If you are experiencing a problem when shifting gears, stickiness, or grinding, then it may be time for a motorcycle clutch adjustment. Continue reading for advice on adjusting your motorcycle clutch.</p>
+
+          <b>Step 1 - Secure the Bike</b>
+<p>It is important to place the motorcycle in a safe position. Place the bike on its center stand. Make sure it is secure to prevent it from toppling or falling over. This can be a source of serious injuries.</p>
+
+<p>Use pliers or wrenches to remove brake calipers from the disk.</p>
+
+<b>Step 2 – Take off Brake Fluid</b>
+<p>Align the handlebars so that the main cylinder is balanced and level. It is advisable to use suitable material to cover the outer surface of the bike. Brake fluid easily damages paint jobs on such surfaces.</p>
+
+<b>Step 3 – Pump</b>
+<p>Remove the top cover on the brake fluid reservoir. Take a look and makes sure it is filled with fluid. Place the old bucket beneath the caliper and pump until the piston comes out. Watch out that the reservoir is filled up at all times. Add more brake fluid if necessary.</p>
+
+<p>A G-clamp can be used to secure one piston if there are two of them. Keep alternating the G-clamp between the two pistons while keeping up with the pumping. This makes it easy to remove them. This process drains old brake fluid.</p>
+
+<b>Step 4 – Bleed Brakes</b>
+<p>Put the caliper and pistons back in place. Use brake fluid for lubrication. Get brake fluid and put sufficient quantities in the master cylinder. Take one end of a hose and place it on the bleed cover. Place the other end in a bucket.</p>
+
+<p>Pump brake handles continuously for a few minutes. On the caliper, carefully open the bleed screw to let out fluid mixed with air. Return the screw and continue pumping for a few minutes. This should be repeated several times until there is no air out of the brake fluid.</p>
+
+<p>It is advisable to tap the hose and bleed screw to help get rid of bubbles during bleeding. The setting can be left to stay overnight. Continue with the procedure by continuous pumping and checking how air is expelled from brake fluid.</p>
+
+<p>Bleeding brakes manually might require a great deal of patience.</p>
+
+<b>Step 5 – Clean Up</b>
+<p>Use water to clean up any traces of brake fluid on the bike and the work area.</p>
+
+<b>Tips</b>
+<p>Try to use tools that guarantee success when bleeding motorcycle brakes. This includes pressurized brake bleeders, vacuum bleeding kits,
+Watch out for brake fluids as it can easily ruin the bike’s paint job</p>
+  <br>
+  
+       <B >Clutch</B> 
+  <p >Stock Cable – Release the clutch cable and apply gasoline with oil</p>
+  <p >Cable Wire / Wear / Damage / Replace</p>
+
+
+
+              <br><br><br>   
+      </div>
+</ons-page>
+         
+    <div class="bottom-nav">
+        <button modifier="material" class="button panelcolor">
+            <a onclick="showModal()" href="index.html">
+                <img src="img/hometrans.png">
+            </a>
+        </button>
+          <button modifier="material" class="button panelcolor">
+             <a onclick="showModal()" href="quickfix.html">
+                <img src="img/button-settingstrans.png">
+            </a>
+        </button>
+        <button modifier="material" class="button panelcolor">
+            <a  onclick="showModal()" href="maintenance.html">
+                <img src="img/button-toolstrans.png">
+            </a>
+        </button>
+    </div>
+    
+</body>
+        <script type="text/javascript">
+           
+        </script>
+        <script type="text/javascript" src="onsenui/js/onsenui.js"  ></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3"></script>
+        <script src="onsenui/js/onsenui.min.js"></script>
+    <!-- <script type="text/javascript" src="cordova.js"></script>
+ -->    <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/core.js"></script>
+        <script type="text/javascript" src="js/core.min.js"></script>
+</html>
